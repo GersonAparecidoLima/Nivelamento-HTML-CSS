@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    background-color: #ddd;
+    margin: 0;
+}
+
+.container-dos-blocos {
+    width: 100%;
+
+    max-width: 960px;
+    margin: 0 auto;
+    /*Criar um conteiner flexivel a niverl de bloco*/
+    display: flex;
+    flex-wrap: wrap;
+    /*ou 
+    fazer o mesmo em line
+    display: inline-flex;
+    */
+    
+    /* flexBox criar conteine e itens flexiveis
+    em diferentes resoluções
+    */
+    /*para organizar os itens dentro de um conteine
+     flex-direction: row ; ==> é o valor padrão para organiza os itens em linha      
+     um iten ao lado do outro
+     flex-direction: column ; ==> organiza os itens em coluna uma em baixo do outro*/
+    
+    /*
+    flex-wrap: wrap; é o valor padrão, nos conseguimos que os itens que não couberem na linha 
+    eles vão para a linha de baixo    
+
+    flex-wrap: wrap-reverse; faz que os intes sejam distribuidos de baixo para cima
+     */
+
+     
+    /*
+    justify-content: ; ==> Define os itens do alinhamento do conteine aparti do eixo principal
+    ajudar a distribuir os itens no conteine principalmente quando eles já atingirão o tamanho 
+    maximo
+    */
+
+    /*
+    align-items: ; =>  Define os itens do alinhamento do conteine aparti do eixo transversal
+    */
+    
+    
+    /*
+    align-content: ; ==> Alinha as linhas do conteine removendo aquelas censasão de espaço sobrando
+    quando parace que o conteudo ficou mas alto
+    */
+    
+    .item{
+        flex-shrink: ;
+    }
+    
+    /*
+    flex-shrink ==> encolher dentro do conteine
+    */
+      /*
+    flex-grow: ; ==> define se o item deve creser, todo item tem o seu valor 0, caso altere para 1
+    todos terão o se valor destribuido no conteniner
+    */
+     
+     
+}
+
+.bloco {
+    width: 280px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.bloco:hover {
+    border: 2px solid red;
+}
